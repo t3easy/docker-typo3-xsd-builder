@@ -9,7 +9,7 @@ ADD teardown.sh /teardown.sh
 RUN mkdir /xsd
 
 RUN /bootstrap.sh \
-    && /generatexsd.sh 7.6 8.5 master \
+    && /generatexsd.sh 7.6 8.5 8.6 master \
     && /teardown.sh
 
 VOLUME /xsd
